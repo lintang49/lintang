@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Lintang Trisna Kentjana</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+        }
+        hr {
+            border: none;
+            height: 5px;
+            background-color: blue;
+            margin: 20px 0;
+        }
+        .content {
+            text-align: center;
+        }
+        #profile-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 400px;
+            margin: 20px auto;
+        }
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        #profile-data {
+            margin-top: 15px;
+            text-align: left;
+            width: 100%;
+        }
+        ul, ol {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        ul {
+            list-style-type: circle;
+        }
+        .footer {
+            font-weight: bold;
+            margin: 20px 0;
+            text-align: center;
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <hr>
+    <div class="content">
+        <h1>WEBSITE PROFILE <span id="name-title">Lintang Trisna Kentjana</span></h1>
+    </div>
+    <hr>
+    <div id="profile-section">
+        <img src="me.jpg.jpeg" alt="Foto Profil Lintang Trisna Kentjana" class="profile-picture">
+        <div id="profile-data"></div>
+    </div>
+    <hr>
+    <div class="footer">
+        <p id="footer"></p>
+    </div>
+    <hr>
+    <script>
+        const profile = {
+            nim: "241011701157",
+            nama: "Lintang Trisna Kentjana",
+            kelas: "01SIFP014",
+            programStudi: "Sistem Informasi",
+            alamat: "JL. Peta Barat, Jakarta Barat",
+            asalSekolah: "SMAN 95 JAKARTA",
+            jurusan: "Sistem Informasi",
+            email: "ltk11022005@gmail.com",
+            telepon: "0896-2197-1714"
+        };
+
+        
+        const profileDataContainer = document.getElementById("profile-data");
+        profileDataContainer.innerHTML = `
+            <ol>
+                <li><strong>NIM:</strong> ${profile.nim}</li>
+                <li><strong>Nama:</strong> ${profile.nama}</li>
+                <li><strong>Kelas:</strong> ${profile.kelas}</li>
+            </ol>
+            <ul>
+                <li><strong>Program Studi:</strong> ${profile.programStudi}</li>
+                <li><strong>Alamat:</strong> ${profile.alamat}</li>
+                <li><strong>Asal Sekolah:</strong> ${profile.asalSekolah}</li>
+            </ul>
+            <ol type="I">
+                <li><strong>Jurusan:</strong> ${profile.jurusan}</li>
+                <li><strong>Email:</strong> <a href="mailto:${profile.email}">${profile.email}</a></li>
+                <li><strong>Telepon:</strong> ${profile.telepon}</li>
+            </ol>
+        `;
+
+       
+        const footerElement = document.getElementById("footer");
+        footerElement.innerHTML = `Design by ${profile.nama} © 2024 All Rights Reserved`;
+    </script>
+</body>
+</html>
