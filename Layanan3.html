@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kelurahan Dendelion</title>
+    <link rel="stylesheet" href="layanan3.CSS">
+</head>
+
+<body>
+    <header>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <button class="back-button" onclick="location.href='PROJECT PTI.html'">
+            <i class="fas fa-arrow-left"></i> Kembali ke Halaman Utama
+        </button>
+        
+
+    </header>
+
+
+<section class="layanan" id="layanan">
+    <h2>Layanan Kelurahan Dendelion</h2>
+
+  
+    <div class="layanan-item">
+        <h3>Layanan Administrasi</h3>
+        <p>Kelurahan Dendelion menyediakan berbagai layanan administrasi untuk memenuhi kebutuhan dokumen warga, seperti pembuatan KTP, Kartu Keluarga, Surat Keterangan Domisili, dan lain-lain. Proses pengajuan dapat dilakukan dengan mengunjungi kantor desa pada jam kerja atau melalui sistem online yang tersedia di website kelurahan.</p>
+        
+        <form action="menyimpan data pengguna.php" method="POST" class="layanan-form">
+            <div class="form-group">
+                <label for="admin-nama">Nama Lengkap:</label>
+                <input type="text" id="admin-nama" name="nama" required placeholder="Masukkan Nama Lengkap">
+            </div>
+
+            <div class="form-group">
+                <label for="admin-nik">Nomor KTP:</label>
+                <input type="text" id="admin-nik" name="nik" required placeholder="Masukkan Nomor KTP">
+            </div>
+
+            <div class="form-group">
+                <label for="admin-layanan">Jenis Layanan:</label>
+                <select id="admin-layanan" name="layanan" required>
+                    <option value="KTP">Pembuatan KTP</option>
+                    <option value="KK">Pembuatan Kartu Keluarga</option>
+                    <option value="Surat Domisili">Surat Keterangan Domisili</option>
+                    <option value="Lainnya">Lainnya</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="admin-alamat">Alamat:</label>
+                <textarea id="admin-alamat" name="alamat" required placeholder="Masukkan Alamat Anda"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Kirim Permohonan</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="layanan-item">
+        <h3>Layanan Kesehatan</h3>
+        <p>Layanan kesehatan di wilayah Dendelion meliputi posyandu untuk ibu dan anak, pemeriksaan kesehatan rutin, serta penyuluhan kesehatan yang dilakukan secara berkala. Fasilitas kesehatan yang tersedia bertujuan untuk meningkatkan kualitas hidup warga Dendilion.</p>
+        
+        <form action="/submit-health-form" method="POST" class="layanan-form">
+            <div class="form-group">
+                <label for="health-nama">Nama Lengkap:</label>
+                <input type="text" id="health-nama" name="nama" required placeholder="Masukkan Nama Lengkap">
+            </div>
+
+            <div class="form-group">
+                <label for="health-layanan">Jenis Layanan Kesehatan:</label>
+                <select id="health-layanan" name="layanan" required>
+                    <option value="Posyandu">Posyandu</option>
+                    <option value="Pemeriksaan Rutin">Pemeriksaan Rutin</option>
+                    <option value="Penyuluhan Kesehatan">Penyuluhan Kesehatan</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="health-alamat">Alamat:</label>
+                <textarea id="health-alamat" name="alamat" required placeholder="Masukkan Alamat Anda"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Kirim Permohonan</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="layanan-item">
+        <h3>Layanan Pendidikan dan Pelatihan</h3>
+        <p>Wilayah Dendelion menyediakan layanan pendidikan seperti program pemberantasan buta huruf, pelatihan keterampilan kerja, dan kursus untuk meningkatkan kemampuan masyarakat dalam berbagai bidang. Program ini dirancang untuk mendukung peningkatan keterampilan dan pengetahuan warga.</p>
+
+        <form action="/submit-education-form" method="POST" class="layanan-form">
+            <div class="form-group">
+                <label for="edu-nama">Nama Lengkap:</label>
+                <input type="text" id="edu-nama" name="nama" required placeholder="Masukkan Nama Lengkap">
+            </div>
+
+            <div class="form-group">
+                <label for="edu-layanan">Jenis Layanan Pendidikan:</label>
+                <select id="edu-layanan" name="layanan" required>
+                    <option value="Buta Huruf">Program Pemberantasan Buta Huruf</option>
+                    <option value="Pelatihan Kerja">Pelatihan Keterampilan Kerja</option>
+                    <option value="Kursus">Kursus Peningkatan Kemampuan</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="edu-alamat">Alamat:</label>
+                <textarea id="edu-alamat" name="alamat" required placeholder="Masukkan Alamat Anda"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Kirim Permohonan</button>
+            </div>
+        </form>
+    </div>
+
+ 
+    <div class="layanan-item">
+        <h3>Layanan Sosial</h3>
+        <p>Layanan sosial meliputi bantuan kepada masyarakat kurang mampu, layanan bantuan bencana, dan program bantuan sosial lainnya. Desa Dendelion berkomitmen untuk membantu warga yang membutuhkan agar tercipta kesejahteraan bersama.</p>
+
+        <form action="/submit-social-form" method="POST" class="layanan-form">
+            <div class="form-group">
+                <label for="social-nama">Nama Lengkap:</label>
+                <input type="text" id="social-nama" name="nama" required placeholder="Masukkan Nama Lengkap">
+            </div>
+
+            <div class="form-group">
+                <label for="social-layanan">Jenis Layanan Sosial:</label>
+                <select id="social-layanan" name="layanan" required>
+                    <option value="Bantuan Masyarakat">Bantuan untuk Masyarakat Kurang Mampu</option>
+                    <option value="Bantuan Bencana">Bantuan Sosial untuk Bencana</option>
+                    <option value="Lainnya">Lainnya</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="social-alamat">Alamat:</label>
+                <textarea id="social-alamat" name="alamat" required placeholder="Masukkan Alamat Anda"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Kirim Permohonan</button>
+            </div>
+        </form>
+    </div>
+
+    
+    <div class="layanan-item">
+        <h3>Layanan Informasi dan Pengaduan</h3>
+        <p>Untuk meningkatkan pelayanan kepada masyarakat,Kelurahan Dendelion menyediakan layanan informasi dan pengaduan. Warga dapat menyampaikan saran, kritik, atau pengaduan terkait layanan desa melalui formulir yang tersedia di kantor desa atau melalui website ini.</p>
+
+        <form action="menyimpan data pengguna.php" method="POST" class="layanan-form">
+            <div class="form-group">
+                <label for="feedback-nama">Nama Lengkap:</label>
+                <input type="text" id="feedback-nama" name="nama" required placeholder="Masukkan Nama Lengkap">
+            </div>
+
+            <div class="form-group">
+                <label for="feedback-layanan">Jenis Pengaduan/Saran:</label>
+                <select id="feedback-layanan" name="layanan" required>
+                    <option value="Pengaduan">Pengaduan Layanan</option>
+                    <option value="Saran">Saran dan Masukan</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="feedback-keterangan">Keterangan:</label>
+                <textarea id="feedback-keterangan" name="keterangan" required placeholder="Masukkan Keterangan Pengaduan atau Saran Anda"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Kirim Pengaduan/Saran</button>
+            </div>
+        </form>
+    </div>
+
+</section>
+
+<footer>
+    <p>&copy; 2024 kelurahan Dendelion. Semua Hak Dilindungi.</p>
+</footer>
+
+</body>
+</html>

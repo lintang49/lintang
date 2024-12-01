@@ -1,0 +1,179 @@
+header {
+    position: sticky; 
+    top: 0;
+    z-index: 1000;
+    background-color: #004085;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Agar konten tidak terhalang oleh header */
+body {
+    margin-top: 60px; /* Sesuaikan dengan tinggi header */
+}
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f0ff; /* Light blue background */
+    color: #333; /* Dark text for readability */
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+    background: #004085; /* Deep blue for navigation */
+    color: #f6f5f5;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #f6f5f5;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #ffd700; /* Golden color on hover for elegance */
+}
+
+
+
+
+/* Styling umum untuk form */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.layanan {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.layanan-item {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+h3 {
+    color: #34495e;
+}
+
+/* Form */
+.layanan-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.submit-btn {
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-btn:hover {
+    background-color: #2980b9;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+footer {
+    margin-top: 20px;
+    text-align: center;
+    background-color:  #004085;
+    color: white;
+    padding: 10px 0;
+    font-size: 0.9em;
+}
+.button-back {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #004085;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.button-back:hover {
+    background: #f1f2f1;
+}
+.back-button {
+    background-color: #004085; /* Biru elegan */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Jarak antara ikon dan teks */
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin: 10px 0;
+}
+
+.back-button i { /* Gaya untuk ikon Font Awesome */
+    font-size: 18px;
+}
+
+.back-button:hover {
+    background-color: #165e99;
+    transform: scale(1.05);
+}

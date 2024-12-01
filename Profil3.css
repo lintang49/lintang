@@ -1,0 +1,256 @@
+header {
+    position: sticky; 
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+body {
+    margin-top: 60px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f0ff; 
+    color: #333; 
+    line-height: 1.6;
+}
+
+
+nav {
+    background: #004085;
+    color: #f6f5f5;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #f6f5f5;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #ffd700; 
+}
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #e8f5e9, #f9fbe7);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+
+.profil-desa {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background: linear-gradient(to bottom, #ffffff, #f1f8e9);
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+}
+
+.profil-desa h2 {
+    text-align: center;
+    color: #4c7faf;
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    position: relative;
+    z-index: 1;
+}
+
+.profil-desa h2::after {
+    content: "";
+    width: 80px;
+    height: 3px;
+    background: #4c7faf;
+    display: block;
+    margin: 10px auto 0;
+}
+
+
+.profil-desa h3 {
+    font-size: 24px;
+    color: #4c7faf;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.profil-desa h3::before {
+    content: "🌱";
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.profil-desa p, .profil-desa ul {
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 10px 0 20px;
+}
+
+.profil-desa ul {
+    list-style: none;
+    padding: 0;
+}
+.profil-desa ul li {
+    margin: 10px 0;
+    padding: 12px;
+    background: #f4f4f4;
+    border-left: 5px solid #4c7faf;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.profil-desa ul li::before {
+    content: "✔";
+    color: #4c7faf;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.profil-desa ul li:hover {
+    transform: translateX(10px);
+    background: #e8f5e9;
+}
+
+
+.profil-desa div {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #4c7faf;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 30px;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+}
+footer {
+    margin-top: 20px;
+    text-align: center;
+    background-color:  #004085;
+    color: white;
+    padding: 10px 0;
+    font-size: 0.9em;
+}
+.button-back {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #004085;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.button-back:hover {
+    background: #f1f2f1;
+}
+
+.struktur-pemerintahan {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f4f4f4;
+}
+
+
+.pemerintah-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 0 10px;
+}
+
+.pemerintah-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pemerintah-card img {
+    width: 100%;
+    height: auto;
+    
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.pemerintah-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+    font-weight: bold;
+}
+
+.pemerintah-card p {
+    font-size: 14px;
+    color: #777;
+}
+
+.pemerintah-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width: 768px) {
+    .pemerintah-card h3 {
+        font-size: 16px;
+    }
+
+    .pemerintah-card p {
+        font-size: 12px;
+    }
+}

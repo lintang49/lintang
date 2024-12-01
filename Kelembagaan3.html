@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelembagaan Kelurahan Dendelion</title>
+    <link rel="stylesheet" href="kelembagaan3.CSS">
+    <script src="kelembagaan3.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="PROJECT PTI.html">Halaman Utama</a></li>
+                <li><a href="beranda3.html">Beranda</a></li>
+                <li><a href="Profil3.html">Profil</a></li>
+                <li><a href="Kontak3.html">Kontak</a></li>
+                <li><a href="Kelembagaan3.html">Kelembagaan</a></li>
+                <li><a href="Data3.html">Data</a></li>
+                <li><a href="login contoh.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+ 
+    <section class="kelembagaan" id="kelembagaan">
+        <div class="container">
+            <center><h2>Kelembagaan Kelurahan Dendelion</h2></center>
+            <center><p>Kami hadir dengan berbagai lembaga yang mendukung pengembangan masyarakat wilayah Dendilion.</p></center>
+
+            
+            <div class="card-grid">
+                <div class="card" onclick="openModal('modal-bpd')">
+                    <i class="fas fa-users icon"></i>
+                    <h3>Badan Permusyawaratan Desa (BPD)</h3>
+                    <p>Lembaga perwakilan masyarakat yang berperan dalam menampung aspirasi dan mengawasi jalannya pemerintahan desa.</p>
+                </div>
+                <div class="card" onclick="openModal('modal-lpmd')">
+                    <i class="fas fa-hand-holding-heart icon"></i>
+                    <h3>LPMD</h3>
+                    <p>Meningkatkan partisipasi masyarakat dalam pembangunan dan kesejahteraan desa.</p>
+                </div>
+                <div class="card" onclick="openModal('modal-karang-taruna')">
+                    <i class="fas fa-fire icon"></i>
+                    <h3>Karang Taruna</h3>
+                    <p>Wadah pembinaan generasi muda untuk kegiatan sosial dan budaya.</p>
+                </div>
+                <div class="card" onclick="openModal('modal-pkk')">
+                    <i class="fas fa-heart icon"></i>
+                    <h3>Pemberdayaan Kesejahteraan Keluarga (PKK)</h3>
+                    <p>Organisasi ibu-ibu yang fokus pada kesejahteraan keluarga melalui program kesehatan, pendidikan, dan ekonomi.</p>
+                </div>
+                <div class="card" onclick="openModal('modal-kelompok-tani')">
+                    <i class="fas fa-handshake icon"></i>
+                    <h3>Kelompok Tani</h3>
+                    <p>Forum petani untuk berbagi pengalaman dan meningkatkan pengetahuan dalam sektor pertanian.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <div class="modal" id="modal-bpd">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-bpd')">&times;</span>
+            <center>
+            <h3>Badan Permusyawaratan Desa (BPD)</h3>
+            <img src="bpd1.jpg" alt="Foto Kegiatan BPD" class="modal-img">
+            <img src="bpd2.jpg" alt="Foto Anggota BPD" class="modal-img">
+            <p>Badan Permusyawaratan Desa (BPD) adalah lembaga perwakilan masyarakat yang memiliki peran penting dalam menampung aspirasi masyarakat serta mengawasi jalannya pemerintahan desa.</p>
+            </center>
+        </div>
+    </div>
+
+    
+    <div class="modal" id="modal-lpmd">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-lpmd')">&times;</span>
+            <center>
+            <h3>Lembaga Pemberdayaan Masyarakat Desa (LPMD)</h3>
+            <img src="lmpd1.jpg" alt="Foto Kegiatan LPMD" class="modal-img">
+            <img src="lmpd2.jpg" alt="Foto Anggota LPMD" class="modal-img">
+            <p>LPMD berperan dalam meningkatkan partisipasi masyarakat dalam pembangunan dan kesejahteraan desa melalui berbagai inisiatif pemberdayaan ekonomi dan sosial.</p>
+           </center>
+        </div>
+    </div>
+
+
+    <div class="modal" id="modal-karang-taruna">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-karang-taruna')">&times;</span>
+            <center>
+            <h3>Karang Taruna</h3>
+            <img src="karang taruna1.jpg" alt="Foto Kegiatan Karang Taruna" class="modal-img">
+            <img src="karang taruna2.jpg" alt="Foto Generasi Muda" class="modal-img">
+            <p>Karang Taruna berfungsi sebagai wadah pembinaan generasi muda untuk berperan aktif dalam kegiatan sosial, budaya, dan kewirausahaan di desa.</p>
+            </center>
+        </div>
+    </div>
+
+    <!-- Modal: PKK -->
+    <div class="modal" id="modal-pkk">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-pkk')">&times;</span>
+            <center>
+            <h3>Pemberdayaan Kesejahteraan Keluarga (PKK)</h3>
+            <img src="pkk1.jpg" alt="Foto Kegiatan PKK" class="modal-img">
+            <img src="pkk2.jpg" alt="Foto Kegiatan PKK" class="modal-img">
+            <p>PKK fokus pada pemberdayaan ibu-ibu dan keluarga melalui program kesehatan, pendidikan, ekonomi, serta peningkatan kualitas hidup keluarga.</p>
+            </center>
+        </div>
+    </div>
+
+    
+    <div class="modal" id="modal-kelompok-tani">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-kelompok-tani')">&times;</span>
+            <center>
+            <h3>Kelompok Tani</h3>
+            <img src="tani1.jpg" alt="Foto Kelompok Tani" class="modal-img">
+            <img src="tani2.jpg" alt="Foto Kegiatan Kelompok Tani" class="modal-img">
+            <p>Kelompok Tani berfungsi sebagai forum bagi para petani untuk berbagi pengetahuan dan pengalaman dalam sektor pertanian, serta meningkatkan kualitas produksi pertanian di desa.</p>
+            </center>
+        </div>
+    </div>
+
+    
+    <section>
+        <center>
+            <button onclick="toggleForm()">Daftar Sebagai Anggota</button>
+        </center>
+
+        <div class="form-registrasi" id="form-registrasi">
+            <div class="container">
+                <center><h2>Formulir Pendaftaran Anggota</h2></center>
+                <form action="submit_registration.php" method="POST">
+                    <label for="nama">Nama Lengkap:</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Masukkan email" required>
+                    
+                    <label for="telepon">Nomor Telepon:</label>
+                    <input type="tel" id="telepon" name="telepon" placeholder="Masukkan nomor telepon" required>
+                    
+                    <label for="lembaga">Pilih Lembaga:</label>
+                    <select id="lembaga" name="lembaga" required>
+                        <option value="">-- Pilih --</option>
+                        <option value="bpd">Badan Permusyawaratan Desa (BPD)</option>
+                        <option value="lpmd">Lembaga Pemberdayaan Masyarakat Desa (LPMD)</option>
+                        <option value="karang-taruna">Karang Taruna</option>
+                        <option value="pkk">Pemberdayaan Kesejahteraan Keluarga (PKK)</option>
+                        <option value="kelompok-tani">Kelompok Tani</option>
+                    </select>
+                    
+                    <label for="pesan">Pesan atau Alasan Bergabung:</label>
+                    <textarea id="pesan" name="pesan" rows="4" placeholder="Tulis pesan Anda di sini"></textarea>
+                    
+                    <button type="submit">Daftar Sekarang</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2024 Kelurahan Dendelion. Semua Hak Dilindungi.</p>
+    </footer>
+
+</body>
+</html>
